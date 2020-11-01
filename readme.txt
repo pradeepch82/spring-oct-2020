@@ -88,18 +88,17 @@ Spring Bean Life Cycle
 ==========================
 1.Instantiation
 2.Dependency Injection(setter/constructor)
-3.Initialization
+3.Initialization   (init-method)
 4.Service
-5.Destruction
-
+5.Destruction      (destroy-method)
 
 Spring Bean Scope : singletone|prototype|request|session
 
 
-
-
-
+Day2 :1-Nov-2020
+=================
 Wiring :Associations of spring beans with each other
+
 
 Autowiring :It is a mechanism of delagating the responsibilty of
             Associations of spring beans with each other to spring container                       
@@ -109,6 +108,11 @@ Autowiring :It is a mechanism of delagating the responsibilty of
 
 
 
+Spring Bean Registration via Annotations
+==========================================
+
+We can register Spring Beans using any one of the below annotation
+
 
                               @Component
                               
@@ -117,19 +121,38 @@ Autowiring :It is a mechanism of delagating the responsibilty of
   
   
 
+<bean  >  </bean>                  :@Component
+
+<bean  auto-wire="">  </bean>       :@Autowire
+
+<bean  init-method="">  </bean>     :@PostConstruct
+
+<bean  destroy-method="">  </bean>  :@PreDestroy
+
+
+CustomerMainApp
+         CustomerService
+                 CustomerDao
+                          CustomerMap
 
 
 
 
-Customer c1=new Customer();
-
-c1.setId(101);
-c1.setId(101);
-c1.setId(101);
-c1.setId(101);
+beans.xml                => @Configuration
+context:component-scan   => @ComponentScan
 
 
 
+
+
+
+
+
+
+
+
+
+https://o7planning.org/en/10683/create-a-shopping-cart-web-application-with-spring-boot-hibernate
 
 
 
