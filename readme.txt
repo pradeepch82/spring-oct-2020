@@ -144,8 +144,18 @@ context:component-scan   => @ComponentScan
 
 
 
+Day3 :7-Nov-2020
+=================
 
-
+CustomerMainApp
+         CustomerService
+                 CustomerDao
+                          JdbcTemplate
+                                 DataSource
+                                         driver
+                                         url
+                                         username
+                                         password       
 
 
 
@@ -153,6 +163,26 @@ context:component-scan   => @ComponentScan
 
 
 https://o7planning.org/en/10683/create-a-shopping-cart-web-application-with-spring-boot-hibernate
+
+
+
+
+
+
+
+driver
+url
+username
+password
+
+
+
+
+
+
+
+
+
 
 
 
