@@ -177,6 +177,147 @@ password
 
 
 
+Day4 :10-Nov-2020
+=================
+              
+                            Model       View     Controller
+===========================================================
+MVC1                       Java Bean    JSP      JSP
+      
+MVC2                       Java Bean    JSP      Servlet
+
+MVC3                       Java Bean    JSP      Filter
+
+MVC4                       Java Bean    JSP      Tag Handler
+
+
+
+MVC2
+======
+Struts1.x
+JSF1.x,2.x
+Spring Web MVC
+
+
+
+http://localhost:8080/spring-web-mvc/spring/hello
+http://localhost:8080/spring-web-mvc/spring/welcome
+http://localhost:8080/spring-web-mvc/spring/greet
+http://localhost:8080/spring-web-mvc/spring/today
+
+
+
+
+
+@Controller
+public class DemoController {
+
+	
+	
+	public DemoController() {
+	
+		System.out.println("Demo Controller created.....");
+	
+	}
+	
+	@RequestMapping(value="/hello",method = RequestMethod.GET)
+	public @ResponseBody String hello() {
+		return "HEllo World";
+	}
+	
+	@RequestMapping(value="/greet",method = RequestMethod.GET)
+	public @ResponseBody String greet() {
+		return "Greet Every One";
+	}
+	
+	@RequestMapping(value="/welcome",method = RequestMethod.GET)
+	public @ResponseBody String welcome() {
+		return "Welcome to Everyone";
+	}
+	
+	@RequestMapping(value="/today")
+	public  @ResponseBody String today() {
+		return "Today is :"+new Date();
+	}
+		
+}
+
+=================
+
+
+@RestController =@Controller +@ResponseBody
+
+
+
+@RestController
+public class DemoController {
+
+	
+	
+	public DemoController() {
+	
+		System.out.println("Demo Controller created.....");
+	
+	}
+	
+	@RequestMapping(value="/hello",method = RequestMethod.GET)
+	public String hello() {
+		return "HEllo World";
+	}
+	
+	@RequestMapping(value="/greet",method = RequestMethod.POST)
+	public String greet() {
+		return "Greet Every One";
+	}
+	
+	@RequestMapping(value="/welcome",method = RequestMethod.DELETE)
+	public String welcome() {
+		return "Welcome to Everyone";
+	}
+	
+	@RequestMapping(value="/today")
+	public  String today() {
+		return "Today is :"+new Date();
+	}
+		
+}
+
+
+==========================
+
+@RequestMapping(value="/hello",method = RequestMethod.GET)
+	 or
+@Getmapping("/hello")
+
+
+@RequestMapping(value="/hello",method = RequestMethod.POST)
+	 or
+@Postmapping("/hello")
+
+@RequestMapping(value="/hello",method = RequestMethod.DELETE)
+	 or
+@Deletemapping("/hello")
+
+@RequestMapping(value="/hello",method = RequestMethod.PUT)
+	 or
+@Putmapping("/hello")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
