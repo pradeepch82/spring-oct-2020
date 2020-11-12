@@ -303,6 +303,55 @@ public class DemoController {
 @Putmapping("/hello")
 
 
+Day5 :12-Nov-2020
+=================
+
+Restful Web API
+
+
+http://localhost:8080/spring-cms-mvc/rest/customers      :GET    : get all customers
+http://localhost:8080/spring-cms-mvc/rest/customers/101  :GET    : get customer with id 101
+http://localhost:8080/spring-cms-mvc/rest/customers/101  :DELETE : delete customer with id 101
+http://localhost:8080/spring-cms-mvc/rest/customers/101  :PUT    : update customer with id 101
+http://localhost:8080/spring-cms-mvc/rest/customers      :POST   : add customer 
+
+
+
+
+
+Path Varaibale
+==============
+http://localhost:8080/spring-cms-mvc/rest/customers/101
+
+Request Param
+==============
+http://localhost:8080/spring-cms-mvc/rest/customers?customerId=101
+
+
+PathVraible is supported by GET,PUT,DELETE,PATCH
+RequestParam is supported by GET method
+
+
+
+
+@ResponseBody  =>Convert Java Object to JSON  => Server to Client 
+@RequestBody   =>Convert JSON to Java Object  => Client to Server
+
+
+ jackson-annotations-2.9.0.jar
+ jackson-core-2.9.8.jar
+ jackson-databind-2.9.8.jar 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
