@@ -343,6 +343,26 @@ RequestParam is supported by GET method
  jackson-databind-2.9.8.jar 
 
 
+Day6 :19-Nov-2020
+=================
+
+Spring Web MVC CRUD Operations UI
+
+
+Difference between applicationcontext and webapplicationcontext
+=================================================================
+
+https://codethataint.com/blog/difference-between-applicationcontext-and-webapplicationcontext/
+
+
+
+To create a Root WebapplicationContext
+============================================
+
+<!-- rootapplicationcontext-->
+<listener>
+   <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
 
 
 
