@@ -366,19 +366,87 @@ To create a Root WebapplicationContext
 
 
 
+Day7 :20-Nov-2020
+=================
+
+Normally if u want to develop Spring Web Applications.
+
+1.Create a Project
+2.Add jar files (compatbility version)
+3.Configuration files (web.xml ,spring-servlet.xml)
+4.Tomcat
+
+
+What is Spring Boot?
+
+Spring Boot is an open source Java-based framework used to create a Micro Service. It is developed by Pivotal Team. It is easy to create a stand-alone and production ready spring applications using Spring Boot. Spring Boot contains a comprehensive infrastructure support for developing a micro service and enables you to develop enterprise-ready applications that you can “just run”.
+
+
+
+Spring Boot provides a good platform for Java developers to develop a stand-alone and production-grade spring application that you can just run. You can get started with minimum configurations without the need for an entire Spring configuration setup.
 
 
 
 
+Advantages
+===========
+Spring Boot offers the following advantages to its developers −
+
+Easy to understand and develop spring applications
+Increases productivity
+Reduces the development time
+
+Goals
+======
+
+Spring Boot is designed with the following goals −
+
+To avoid complex XML configuration in Spring
+To develop a production ready Spring applications in an easier way
+To reduce the development time and run the application independently
+Offer an easier way of getting started with the application
+
+
+
+Why Spring Boot?
+=================
+You can choose Spring Boot because of the features and benefits it offers as given here −
+
+It provides a flexible way to configure Java Beans, XML configurations, and Database Transactions.
+
+It provides a powerful batch processing and manages REST endpoints.
+
+In Spring Boot, everything is auto configured; no manual configurations are needed.
+
+It offers annotation-based spring application
+
+Eases dependency management
+
+It includes Embedded Servlet Container
+
+
+
+1.Spring CLI
+2.start.spring.io
+3.STS
 
 
 
 
+http://localhost:8080/actuator/info
+http://localhost:8080/actuator/health
 
 
 
+Spring Security
+==============
+Default username :user
+Password  :will be generated on the console.
 
-
+Customize Spring Security user and pwd
+=========================================
+spring.security.user.name=pradeep
+spring.security.user.password=pradeep
 
 
 
