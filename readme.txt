@@ -450,6 +450,147 @@ spring.security.user.password=pradeep
 
 
 
+Day8 :30-Nov-2020
+=================
+JPA (Java Persistance API)  :ORM Specification
+================================================
+Hibernate
+ibatis
+toplink
+
+
+java.util.List (I) 
+===================
+ArrayList
+LinkedList
+Vector
+
+
+Object oreinted data
+====================
+
+class Employee{
+int id;
+String name;
+double salary;
+}
+
+Employee e=new Employee(101,"PRadeep",120000.00);
+
+
+=============================================================
+Employe
+==============================================================
+Id                Name             Salary
+==============================================================
+101               PRadeep          120000.00
+
+MApping can be done in 2 ways
+1.XML
+2.Annotation
+
+
+
+List<Student> getAllStudent(){
+return new ArrayList<Student>();
+return new LinkedList<Student>();
+return new Vector<Student>();
+}
+
+
+ArrayList<Student> getAllStudent(){
+return new ArrayList<Student>();
+}
+
+
+CRUDRepository
+      |
+      |
+PagingAndSortingRepository
+      |
+      |
+JPARepository
+
+  
+
+CustomerMainApp
+         CustomerService
+                 CustomerRepository
+                          JPA
+                             Hibernate
+                                 JdbcTemplate
+                                      DataSource
+                                         driver
+                                         url
+                                         username
+                                         password       
+
+
+ 
+
+Day9 :5-Dec-2020
+=================
+Security
+=========
+JAAS -Java Authentication and Authorization Service
+
+
+http status codes
+
+400  :NOT FOUND
+500  :Internal Server Error
+200  :OK
+405  :Method Not Allowed
+401  :Unauthorized
+403  :Forbidden 
+
+
+
+
+Authentication Type
+=====================
+FORM  - Default From Spring Boot 2
+BASIC - 
+DIGEST
+
+
+
+RAM      => ADMIN
+RAHIM    => STUDENT
+DAVID    => TEACHER
+
+
+
+
+MongoDB
+
+
+
+Day10 :5-Dec-2020
+=================
+
+Hibernate Relations
+AOP
+Google Auth Server
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
