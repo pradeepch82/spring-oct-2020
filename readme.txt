@@ -568,18 +568,143 @@ MongoDB
 
 Day10 :5-Dec-2020
 =================
+Google Auth Server
+Swagger 
+
+
+
+AOP  (Aspect Oriented Programming )
+====================================
+
+
+ Concern  = Piece of Code
+
+ Business Logic = Functional Requriment             +   Non Functional Requirement
+
+                    withdraw                             security
+                    deposit                              Logging
+                    fundTransfer                         Tx management
+
+
+
+Concern   =            Core Concern                + Cross Cutting Concern
+
+
+
+AOP is used to seprate the Core Concern from cross cuting concern and attach the CCC in CC dynamically.
+
+
+ 
+                 
+Can we seprate the CCC from CC using OOP ? Yes but it is static approach
+
+
+class Bank{
+
+withdraw(){
+}
+deposit(){
+}
+fundTransfer(){
+}
+
+}
+
+
+class SecurityLogic{
+validate(user,pwd)
+{}
+}
+
+Target
+=======
+It is piece of code that implements CC.
+
+
+
+
+Advice
+=======
+It is piece of code that implements CCC.
+
+what to execute + when to execute
+
+before
+after
+after return
+after throwing
+
+around
+
+
+Join Point
+===========
+It is a well defined point in core concern where u want to invoke the CCC.
+
+Spring Supports only method call as a join point.
+
+
+Point Cut
+=========
+It is a set of one or more join points
+
+
+Aspect
+=======
+Advice + Point cut  =What + When + Where
+
+Weaving
+========
+It is a mechanism of attaching the CCC to CC.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Hibernate Relations
-AOP
-Google Auth Server
 
 
 
 
-
-
-
-
+https://www.callicoder.com/spring-boot-security-oauth2-social-login-part-1/
+https://www.tutorialspoint.com/spring_boot/spring_boot_google_oauth2_sign_in.htm
 
 
 
