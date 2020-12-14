@@ -176,6 +176,7 @@ Attribute Directve    :Won't change the HTML DOM structure
  [ngClass]
  [ngModel] =>It is applicable for only input elements > FormsModule
  [ngSwitch]
+ [routerLink]
 
 Structural Directive :Will change the HTML DOM structure
 ====================
